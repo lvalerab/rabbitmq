@@ -1,0 +1,9 @@
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\bin\Debug\netstandard2.0\CoreDomain.deps.json
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\bin\Debug\netstandard2.0\CoreDomain.dll
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.csprojAssemblyReference.cache
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.AssemblyInfoInputs.cache
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.AssemblyInfo.cs
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\bin\Debug\netstandard2.0\CoreDomain.pdb
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.csproj.CoreCompileInputs.cache
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.dll
+C:\Users\neo12\source\repos\ApiUser\CoreDomain\obj\Debug\netstandard2.0\CoreDomain.pdb
