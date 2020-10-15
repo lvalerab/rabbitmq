@@ -10,7 +10,7 @@ namespace CoreDomain.Service
     public class EmiterService<T>:IEmitter<T>
     {
 
-        private const string _URI_CONEXION = "amqp://guest:guest@localhost:5672";
+        private const string _URI_CONEXION = "amqp://lfvalera:libre@127.0.0.1:5672";
 
         public void Emit(T objeto, string cola="default", string ruta="default", bool duradero=false, bool exclusivo=false, bool autoBorrado=false, IDictionary<string, object> argumentos=null)
         {

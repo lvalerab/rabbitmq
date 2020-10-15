@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+
+  apiuser:
+    image: ${DOCKER_REGISTRY-}apiuser
+    build:
+      context: .
+      dockerfile: ApiUser/Dockerfile
+
+  rabbitmq:
+    image: bitnami/rabbitmq:latest
+    container_name: rabbitmq    
+    environment:
+        - RABBITMQ_USERNAME=lfvalera
+        - RABBITMQ_PASSWORD=libre  
+        - RABBITMQ_NODE_NAME=rabbitmqnode
+    ports:
+        - 5672:5672
+        - 15672:15672

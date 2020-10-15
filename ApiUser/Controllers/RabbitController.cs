@@ -13,13 +13,23 @@ namespace ApiUser.Controllers
     [ApiController]
     public class RabbitController : ControllerBase
     {
-        [HttpGet("Message")]
+        /// <summary>
+        /// Envia un mensaje a la cola definida en rabbitm1
+        /// </summary>
+        /// <param name="mensaje">Mensaje a enviar</param>
+        /// <returns>Siempre true</returns>
+        [HttpGet]
         [Route("send/{mensaje}")]
-        public bool SendMessage(string mensaje)
+        public ActionResult<bool> SendMessage(string mensaje)
         {
-            IEmitter<string> emisor = new EmiterService<string>();
-            emisor.Emit(mensaje);
-            return true;
+            try { 
+                IEmitter<string> emisor = new EmiterService<string>();
+                emisor.Emit(mensaje);
+                return Ok(true);
+            } catch (Exception err)
+            {
+                return BadRequest(err.Message);
+            }
         }
     }
 }
